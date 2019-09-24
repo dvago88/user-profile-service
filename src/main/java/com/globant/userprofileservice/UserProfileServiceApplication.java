@@ -9,14 +9,8 @@ import org.springframework.web.client.RestTemplate;
 @SpringBootApplication
 public class UserProfileServiceApplication {
 
-	@Bean
-	@LoadBalanced
-	public RestTemplate restTemplate() {
-		return new RestTemplate();
-	}
-
-	public static void main(String[] args) {
-		SpringApplication.run(UserProfileServiceApplication.class, args);
-	}
+  public static void main(String[] args) {
+    SpringApplication.run(UserProfileServiceApplication.class, args);
+  }
 
 }

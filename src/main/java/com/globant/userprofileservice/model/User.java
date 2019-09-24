@@ -2,44 +2,44 @@ package com.globant.userprofileservice.model;
 
 public class User {
 
-    private int userId;
-    private String Name;
-    private String identification;
-    private String phone;
+  private int userId;
+  private String Name;
+  private String identification;
+  private String phone;
 
-    public User() {
-        super();
-    }
+  public User() {
+    super();
+  }
 
-    public int getUserId() {
-        return userId;
-    }
+  public int getUserId() {
+    return userId;
+  }
 
-    public void setUserId(int userId) {
-        this.userId = userId;
-    }
+  public void setUserId(int userId) {
+    this.userId = userId;
+  }
 
-    public String getName() {
-        return Name;
-    }
+  public String getName() {
+    return Name;
+  }
 
-    public void setName(String name) {
-        Name = name;
-    }
+  public void setName(String name) {
+    Name = name;
+  }
 
-    public String getIdentification() {
-        return identification;
-    }
+  public String getIdentification() {
+    return identification;
+  }
 
-    public void setIdentification(String identification) {
-        this.identification = identification;
-    }
+  public void setIdentification(String identification) {
+    this.identification = identification;
+  }
 
-    public String getPhone() {
-        return phone;
-    }
+  public String getPhone() {
+    return phone;
+  }
 
-    public void setPhone(String phone) {
-        this.phone = phone;
-    }
+  public void setPhone(String phone) {
+    this.phone = phone;
+  }
 }

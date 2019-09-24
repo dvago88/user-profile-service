@@ -36,5 +36,4 @@ public class UserProfileResource {
     // Return the user profile
     return new UserProfile(userInfo, userNumberOfLessons, lessonsReceived.getLessons().size());
   }
-
 }

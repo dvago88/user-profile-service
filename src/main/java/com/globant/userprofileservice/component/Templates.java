@@ -1,4 +1,3 @@
-/*
 package com.globant.userprofileservice.component;
 
 import org.springframework.cloud.client.loadbalancer.LoadBalanced;
@@ -9,10 +8,9 @@ import org.springframework.web.client.RestTemplate;
 @Component
 public class Templates {
 
-    @Bean
-    @LoadBalanced
-    public RestTemplate restTemplate() {
-        return new RestTemplate();
-    }
+  @Bean
+  @LoadBalanced
+  public RestTemplate restTemplate() {
+    return new RestTemplate();
+  }
 }
-*/
