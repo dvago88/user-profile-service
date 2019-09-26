@@ -1,11 +1,11 @@
 package com.globant.userprofileservice.model;
 
-public class UserNumberOfLessons {
+public class UserLessons {
 
   private int userId;
   private int numberOfRemainingLessons;
 
-  public UserNumberOfLessons() {
+  public UserLessons() {
     super();
   }
 

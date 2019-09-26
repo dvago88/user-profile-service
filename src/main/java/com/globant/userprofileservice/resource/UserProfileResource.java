@@ -2,7 +2,7 @@ package com.globant.userprofileservice.resource;
 
 import com.globant.userprofileservice.model.Record;
 import com.globant.userprofileservice.model.User;
-import com.globant.userprofileservice.model.UserNumberOfLessons;
+import com.globant.userprofileservice.model.UserLessons;
 import com.globant.userprofileservice.model.UserProfile;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -31,9 +31,9 @@ public class UserProfileResource {
     Record lessonsReceived = restTemplate.getForObject("http://lessons-info-service/lessons/numberoflessons/" + userId, Record.class);
 
     // Call payment-info-service
-    UserNumberOfLessons userNumberOfLessons = restTemplate.getForObject("http://payment-info-service/payment/" + userId, UserNumberOfLessons.class);
+    UserLessons userLessons = restTemplate.getForObject("http://payment-info-service/payment/" + userId, UserLessons.class);
 
     // Return the user profile
-    return new UserProfile(userInfo, userNumberOfLessons, lessonsReceived.getLessons().size());
+    return new UserProfile(userInfo, userLessons, lessonsReceived.getLessons().size());
   }
 }

@@ -15,11 +15,11 @@ public class UserProfile {
     super();
   }
 
-  public UserProfile(User user, UserNumberOfLessons userNumberOfLessons, int lessonsReceived) {
+  public UserProfile(User user, UserLessons userLessons, int lessonsReceived) {
     this.userId = user.getUserId();
     this.name = user.getName();
     this.phone = user.getPhone();
-    this.lessonsRemained = userNumberOfLessons.getNumberOfRemainingLessons();
+    this.lessonsRemained = userLessons.getNumberOfRemainingLessons();
     this.lessonsReceived = lessonsReceived;
   }
 
