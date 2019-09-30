@@ -1,8 +1,8 @@
-package com.globant.userprofileservice.model;
+package com.globant.userprofileservice.dto;
 
 import java.util.Date;
 
-public class UserProfile {
+public class NewRegistry {
 
   private int userId;
   private String name;
@@ -11,18 +11,11 @@ public class UserProfile {
   private int lessonsReceived;
   private int lessonsRemained;
   private Date lastClass;
+  private double amountPaid;
+  private Date paymentDate;
+  private int numberOfLessons;
 
-  public UserProfile() {
-    super();
-  }
-
-  public UserProfile(User user, UserLessons userLessons, int lessonsReceived) {
-    this.userId = user.getUserId();
-    this.name = user.getName();
-    this.identification = user.getIdentification();
-    this.phone = user.getPhone();
-    this.lessonsRemained = userLessons.getNumberOfRemainingLessons();
-    this.lessonsReceived = lessonsReceived;
+  public NewRegistry() {
   }
 
   public int getUserId() {
@@ -79,5 +72,29 @@ public class UserProfile {
 
   public void setLastClass(Date lastClass) {
     this.lastClass = lastClass;
+  }
+
+  public double getAmountPaid() {
+    return amountPaid;
+  }
+
+  public void setAmountPaid(double amountPaid) {
+    this.amountPaid = amountPaid;
+  }
+
+  public Date getPaymentDate() {
+    return paymentDate;
+  }
+
+  public void setPaymentDate(Date paymentDate) {
+    this.paymentDate = paymentDate;
+  }
+
+  public int getNumberOfLessons() {
+    return numberOfLessons;
+  }
+
+  public void setNumberOfLessons(int numberOfLessons) {
+    this.numberOfLessons = numberOfLessons;
   }
 }

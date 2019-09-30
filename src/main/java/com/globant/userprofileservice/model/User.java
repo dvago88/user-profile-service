@@ -11,6 +11,12 @@ public class User {
     super();
   }
 
+  public User(String name, String identification, String phone) {
+    Name = name;
+    this.identification = identification;
+    this.phone = phone;
+  }
+
   public int getUserId() {
     return userId;
   }
